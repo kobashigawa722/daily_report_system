@@ -61,6 +61,28 @@ public class Report {
     @Column(name = "updated_at", nullable = false)
     private Timestamp updated_at;
 
+    @Column(name = "timestarte_at" , nullable = false)
+    private String timestarte_at;
+
+    @Column(name = "timeend_at" , nullable = false)
+    private String timeend_at;
+
+    public String getTimestarte_at() {
+        return timestarte_at;
+    }
+
+    public void setTimestarte_at(String timestarte_at) {
+        this.timestarte_at = timestarte_at;
+    }
+
+    public String getTimeend_at() {
+        return timeend_at;
+    }
+
+    public void setTimeend_at(String timeend_at) {
+        this.timeend_at = timeend_at;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -116,4 +138,5 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
 }

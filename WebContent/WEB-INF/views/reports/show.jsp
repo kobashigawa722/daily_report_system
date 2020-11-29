@@ -32,9 +32,18 @@
                         <tr>
                             <th>更新日時</th>
                             <td>
-                                <fmt:formatDate value="${report.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
+                                 <fmt:formatDate value="${report.updated_at}" pattern="yyyy-MM-dd HH:mm:ss" />
                             </td>
                         </tr>
+                         <tr>
+                            <th>出勤時間</th>
+                                 <td><c:out value="${report.timestarte_at}" /></td>
+                        </tr>
+                        <tr>
+                            <th>退勤時間</th>
+                                 <td><c:out value="${report.timeend_at}" /></td>
+                        </tr>
+
                     </tbody>
                 </table>
 

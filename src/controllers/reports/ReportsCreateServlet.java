@@ -54,6 +54,8 @@ public class ReportsCreateServlet extends HttpServlet {
 
             r.setTitle(request.getParameter("title"));
             r.setContent(request.getParameter("content"));
+            r.setTimestarte_at(request.getParameter("timestarte_at"));
+            r.setTimeend_at(request.getParameter("timeend_at"));
 
             Timestamp currentTime = new Timestamp(System.currentTimeMillis());
             r.setCreated_at(currentTime);
